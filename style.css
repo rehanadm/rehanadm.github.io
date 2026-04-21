@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  background: #0d1117;
+  color: #c9d1d9;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: #161b22;
+}
+
+h1 {
+  color: #58a6ff;
+}
+
+section {
+  padding: 40px;
+  border-bottom: 1px solid #30363d;
+}
+
+.skill {
+  display: inline-block;
+  background: #21262d;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.job, .project {
+  background: #161b22;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+section {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
