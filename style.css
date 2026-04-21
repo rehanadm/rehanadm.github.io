@@ -2,61 +2,51 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
     font-family:'Poppins',sans-serif;
-    background: radial-gradient(circle at 20% 20%, #1e3a8a 0%, transparent 40%),
-                radial-gradient(circle at 80% 30%, #0ea5e9 0%, transparent 40%),
-                radial-gradient(circle at 50% 80%, #9333ea 0%, transparent 40%),
-                #020617;
+    background: radial-gradient(circle at 20% 20%, #0ea5e9 0%, transparent 25%),
+                radial-gradient(circle at 80% 80%, #6366f1 0%, transparent 25%),
+                linear-gradient(135deg,#020617,#0f172a,#020617);
+    background-size: 200% 200%;
+    animation: bgMove 12s ease infinite;
     color:#e2e8f0;
     line-height:1.7;
-    overflow-x:hidden;
 }
 
-/* FLOATING GLOW EFFECT */
-body::before{
-    content:'';
-    position:fixed;
-    width:600px;
-    height:600px;
-    background:#38bdf8;
-    filter:blur(180px);
-    opacity:0.15;
-    top:-100px;
-    left:-100px;
-    z-index:-1;
-}
-
-body::after{
-    content:'';
-    position:fixed;
-    width:500px;
-    height:500px;
-    background:#9333ea;
-    filter:blur(180px);
-    opacity:0.12;
-    bottom:-120px;
-    right:-120px;
-    z-index:-1;
+/* ANIMATED BACKGROUND */
+@keyframes bgMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 /* HEADER */
 header{
     text-align:center;
     padding:70px 20px;
-    background:linear-gradient(135deg,#020617,#0f172a);
+    background: rgba(2,6,23,0.7);
+    backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 header h1{
     font-size:3rem;
     font-weight:600;
-    letter-spacing:1px;
-    background:linear-gradient(90deg,#38bdf8,#818cf8);
+    background: linear-gradient(90deg,#38bdf8,#6366f1,#0ea5e9);
+    background-size:200% auto;
     -webkit-background-clip:text;
     color:transparent;
+    animation:textGlow 6s linear infinite;
+}
+
+@keyframes textGlow{
+    to{background-position:200% center;}
 }
 
 header p{
@@ -74,10 +64,10 @@ header a{
 header a::after{
     content:'';
     position:absolute;
-    width:0%;
-    height:2px;
-    bottom:-2px;
     left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
     background:#38bdf8;
     transition:0.3s;
 }
@@ -92,7 +82,7 @@ section{
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
 }
 
@@ -100,7 +90,7 @@ section{
 .card{
     background:rgba(30,41,59,0.55);
     backdrop-filter:blur(14px);
-    border:1px solid rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
     padding:28px;
     border-radius:18px;
     margin-bottom:25px;
@@ -109,7 +99,7 @@ section{
     overflow:hidden;
 }
 
-/* subtle gradient border glow */
+/* glow border effect */
 .card::before{
     content:'';
     position:absolute;
@@ -117,61 +107,58 @@ section{
     border-radius:18px;
     padding:1px;
     background:linear-gradient(120deg,transparent,#38bdf8,transparent);
-    -webkit-mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;
-            mask-composite:exclude;
-    opacity:0.3;
+    mask-composite:exclude;
+    opacity:0;
+    transition:0.4s;
 }
 
-/* hover effect */
+.card:hover::before{
+    opacity:1;
+}
+
 .card:hover{
-    transform:translateY(-6px) scale(1.01);
-    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    transform:translateY(-8px) scale(1.01);
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
 }
 
 /* HEADINGS */
 h2{
+    border-left:4px solid #38bdf8;
+    padding-left:12px;
+    margin-bottom:18px;
     font-size:1.4rem;
-    margin-bottom:15px;
-    position:relative;
-    padding-left:14px;
-}
-
-h2::before{
-    content:'';
-    position:absolute;
-    left:0;
-    top:5px;
-    height:70%;
-    width:4px;
-    background:linear-gradient(#38bdf8,#818cf8);
-    border-radius:5px;
 }
 
 h3{
-    margin-top:18px;
+    margin-top:20px;
     color:#38bdf8;
-    font-size:1rem;
+    font-size:1.05rem;
 }
 
-/* TEXT IMPROVEMENT */
+/* TEXT */
 p{
+    margin-bottom:10px;
     font-size:14px;
     color:#cbd5f5;
 }
 
-/* TAG STYLE (if used later) */
+/* TAG STYLE (optional if you later convert skills) */
 .tag{
     display:inline-block;
-    background:linear-gradient(90deg,#38bdf8,#818cf8);
+    background:linear-gradient(90deg,#38bdf8,#6366f1);
     color:#000;
     padding:6px 12px;
     border-radius:20px;
     margin:5px 5px 5px 0;
-    font-size:11px;
+    font-size:12px;
     font-weight:500;
+    transition:0.3s;
+}
+
+.tag:hover{
+    transform:scale(1.05);
 }
 
 /* LIST */
@@ -187,7 +174,7 @@ li{
 .footer{
     text-align:center;
     padding:30px;
-    background:#020617;
+    background:rgba(2,6,23,0.9);
     border-top:1px solid rgba(255,255,255,0.08);
 }
 
@@ -196,9 +183,22 @@ li{
     text-decoration:none;
 }
 
-/* SCROLL SMOOTH */
-html{
-    scroll-behavior:smooth;
+.footer a:hover{
+    text-decoration:underline;
+}
+
+/* SCROLLBAR (premium touch) */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#38bdf8,#6366f1);
+    border-radius:10px;
 }
 
 /* RESPONSIVE */
@@ -206,7 +206,6 @@ html{
     header h1{
         font-size:2.2rem;
     }
-
     .card{
         padding:20px;
     }
