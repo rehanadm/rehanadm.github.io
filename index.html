@@ -6,125 +6,12 @@
 <title>Abdul Rehan | Full Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#020617,#0f172a);
-    color:#e2e8f0;
-    line-height:1.6;
-}
-
-/* HEADER */
-header{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#020617,#1e293b);
-    border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-header h1{
-    font-size:3rem;
-    font-weight:600;
-    background:linear-gradient(90deg,#38bdf8,#0ea5e9);
-    -webkit-background-clip:text;
-    color:transparent;
-}
-
-header p{
-    margin-top:10px;
-    font-size:14px;
-    opacity:0.9;
-}
-
-header a{
-    color:#38bdf8;
-    margin:0 8px;
-    text-decoration:none;
-}
-
-header a:hover{
-    text-decoration:underline;
-}
-
-/* SECTION */
-section{
-    padding:40px 20px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-/* CARDS */
-.card{
-    background:rgba(30,41,59,0.6);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,0.05);
-    padding:25px;
-    border-radius:16px;
-    margin-bottom:25px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-h2{
-    border-left:4px solid #38bdf8;
-    padding-left:10px;
-    margin-bottom:15px;
-}
-
-h3{
-    margin-top:20px;
-    color:#38bdf8;
-}
-
-/* TAGS */
-.tag{
-    display:inline-block;
-    background:#38bdf8;
-    color:#000;
-    padding:6px 12px;
-    border-radius:20px;
-    margin:5px 5px 5px 0;
-    font-size:12px;
-}
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
-}
-
-/* FOOTER */
-.footer{
-    text-align:center;
-    padding:25px;
-    background:#020617;
-    border-top:1px solid rgba(255,255,255,0.1);
-}
-
-.footer a{
-    color:#38bdf8;
-    text-decoration:none;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-    header h1{font-size:2rem}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<button id="themeToggle" class="toggle-btn">🌙</button>
 
 <header>
 <h1>Abdul Rehan</h1>
@@ -140,7 +27,7 @@ h3{
 <section>
 <div class="container">
 
-<div class="card">
+<div class="card reveal">
 <h2>Profile</h2>
 <p>Senior Linux and Cloud Infrastructure Engineer with 8+ years of experience designing, automating, and supporting enterprise-scale systems across on-premises and cloud environments. Proven expertise in administering Ubuntu, RHEL and Oracle Linux based infrastructures across multi-stage environments (Dev, QA, CI, and Production), with a strong focus on high availability, performance tuning, and security hardening.
 
@@ -153,9 +40,36 @@ Strong background in AWS cloud services (EC2, VPC, IAM, S3, Route53, Auto Scalin
 Recognized for driving operational excellence through automation, improving system uptime, and delivering secure, scalable infrastructure solutions aligned with business goals.</p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h2>Skills</h2>
 
+<!-- Skill Bars -->
+<div class="skill">
+<div class="skill-name">Linux / RHEL / Ubuntu</div>
+<div class="progress"><div class="progress-bar" data-width="95%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">AWS / Cloud</div>
+<div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Docker / Kubernetes</div>
+<div class="progress"><div class="progress-bar" data-width="75%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Ansible / Automation</div>
+<div class="progress"><div class="progress-bar" data-width="75%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Monitoring (Prometheus, Grafana)</div>
+<div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+</div>
+
+<!-- Original Content (unchanged) -->
 <h3>Operating Systems & Virtualization</h3>
 <p>OEL, RHEL, CentOS, Ubuntu, Debian, IBM AIX, Windows, VMware ESXi, Proxmox, VirtualBox, Hyper-V</p>
 
@@ -186,13 +100,13 @@ Recognized for driving operational excellence through automation, improving syst
 <p>SW: Firewalld,Iptables,Ufw</p>
 
 <h3>Servers, HMC & SAN</h3>
-<p>HP: ProLiant DL380 Gen9, Z440, Z800, • Dell: Precision T7600, DELL R730 XD • HMC V8R8.3.0.2 • SAN: Storwize V5000, Flash System 5000</p>
+<p>HP: ProLiant DL380 Gen9, Z440, Z800 • Dell: Precision T7600, DELL R730 XD • HMC V8R8.3.0.2 • SAN: Storwize V5000, Flash System 5000</p>
 
 <h3>Patch Management</h3>
 <p>MANAGEENGINE Endpoint Central, Ubuntu Landscape, YUM, APT</p>
 
 <h3>Database & Applications</h3>
-<p>MongoDB, Oracle 11G, 12C, MariaDB, PostgreSQL •Oracle WebLogic, JBoss Wild Fly</p>
+<p>MongoDB, Oracle 11G, 12C, MariaDB, PostgreSQL • Oracle WebLogic, JBoss Wild Fly</p>
 
 <h3>Backup/Recovery Solutions & utilities</h3>
 <p>VEEAM Backup and Replication, RSYNC, MONGODUMP, EXPDP, MYSQLDUMP</p>
@@ -202,34 +116,52 @@ Recognized for driving operational excellence through automation, improving syst
 
 </div>
 
-<div class="card">
+<!-- PROJECTS SECTION -->
+<div class="card reveal">
+<h2>Projects & Case Studies</h2>
+
+<h3>Infrastructure Automation using Ansible</h3>
+<p>Automated provisioning across environments, reducing manual effort by 70% and ensuring consistency.</p>
+
+<h3>CI/CD Pipeline Optimization</h3>
+<p>Designed Jenkins pipelines integrated with Git and Ansible, reducing deployment time significantly.</p>
+
+<h3>High Availability Web Architecture</h3>
+<p>Implemented Nginx and HAProxy load balancing with SSL termination ensuring zero downtime deployments.</p>
+
+<h3>AWS Cloud Infrastructure Setup</h3>
+<p>Designed scalable cloud infrastructure using EC2, VPC, IAM, S3, Load Balancing and Auto Scaling.</p>
+
+</div>
+
+<div class="card reveal">
 <h2>Certifications</h2>
 <ul>
-<li>AWS Certified Solution Architect Associate 2020 - UDEMY - UC-de6cec80-f1e2-4f64-a906-be0659230315</li>
-<li>AWS Services solutions Architect Associate 2021 - UDEMY - UC-4431e562-cb2f-4cc9-848c-531bd3af8279</li>
-<li>Ultimate AWS Certified solutions Architect Associate SAA-C03 - UDEMY - UC-a9aece97-7fe8-4982-b00c-3c4412ec4a12</li>
-<li>Azure Fundamentals (AZ-900) - UC-36ac7605-06cb-477e-bef1-66524784b812</li>
-<li>AIX Administration - UC-88206bbc-0b26-42d4-83bf-46bad57b58c5</li>
+<li>AWS Certified Solution Architect Associate 2020 - UDEMY</li>
+<li>AWS Services solutions Architect Associate 2021 - UDEMY</li>
+<li>Ultimate AWS Certified SAA-C03 - UDEMY</li>
+<li>Azure Fundamentals (AZ-900) - UDEMY</li>
+<li>AIX Administration - UDEMY</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h2>Education</h2>
 <p>Bachelor of Technology (B.Tech) - Asansol Engineering College (2015)</p>
 <p>DGPA: 7.2 (First Class)</p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h2>Awards</h2>
 <p>Certificate of Appreciation for Innovation - Sirma (2022)</p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h2>Interests</h2>
 <p>Writing, outdoor-sports</p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h2>Declaration</h2>
 <p>I hereby declare that all information is true and correct to the best of my knowledge.</p>
 <p><b>Abdul Rehan</b></p>
@@ -242,6 +174,37 @@ Recognized for driving operational excellence through automation, improving syst
 <p>© 2026 Abdul Rehan | Portfolio</p>
 <p><a href="Abdul_Rehan_Resume_2026-03-18.pdf" download>Download Resume</a></p>
 </div>
+
+<script>
+// Scroll Reveal
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(e=>{
+if(e.isIntersecting){e.target.classList.add("show")}
+});
+});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+// Theme Toggle
+const btn=document.getElementById("themeToggle");
+btn.onclick=()=>{
+document.body.classList.toggle("light-mode");
+localStorage.setItem("theme",document.body.classList.contains("light-mode"));
+};
+if(localStorage.getItem("theme")==="true"){
+document.body.classList.add("light-mode");
+}
+
+// Skill Bars Animation
+const bars=document.querySelectorAll(".progress-bar");
+const skillObs=new IntersectionObserver(entries=>{
+entries.forEach(e=>{
+if(e.isIntersecting){
+e.target.style.width=e.target.dataset.width;
+}
+});
+});
+bars.forEach(b=>skillObs.observe(b));
+</script>
 
 </body>
 </html>
