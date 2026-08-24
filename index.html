@@ -1,231 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdul Rehan | Full Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdul Rehan — Senior Linux & Infrastructure Engineer portfolio, automation, AWS, Ansible, Terraform and DevOps projects.">
+  <title>Abdul Rehan | Linux & Infrastructure Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <button id="themeToggle" class="toggle-btn" aria-label="Toggle theme">☾</button>
 
-<button id="themeToggle" class="toggle-btn">🌙</button>
+  <header class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="eyebrow">LINUX • CLOUD • AUTOMATION • DEVOPS</div>
+      <h1>Abdul Rehan</h1>
+      <p class="hero-title">Senior Linux & Infrastructure Engineer</p>
+      <p class="hero-summary">
+        8+ years of experience across enterprise Linux, infrastructure automation,
+        AWS cloud, virtualization, production support and DevOps tooling.
+      </p>
 
-<header>
-<h1>Abdul Rehan</h1>
-<p><b>Senior Consultant Tech & Support</b></p>
-<p>📧 arehan.tech@gmail.com | 📞 7987109823/9572972292</p>
-<p>📍 Bengaluru, India</p>
-<p>
-<a href="https://linkedin.com/in/abdul-rehan-2269511a1">LinkedIn</a> |
-<a href="https://github.com/rehanadm">GitHub</a>
-</p>
-</header>
+      <div class="hero-tags">
+        <span>Linux</span><span>AWS</span><span>Ansible</span><span>Terraform</span>
+        <span>Jenkins</span><span>Docker</span><span>VMware</span>
+      </div>
 
-<section>
-<div class="container">
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/rehanadm" target="_blank" rel="noopener noreferrer">View GitHub</a>
+        <a class="btn btn-secondary" href="https://linkedin.com/in/abdul-rehan-2269511a1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn-ghost" href="Abdul_Rehan_Resume_2026-03-18.pdf" download>Download Resume</a>
+      </div>
 
-<div class="card reveal">
-<h2>Profile</h2>
-<p>Senior Linux & Infrastructure Engineer with 8+ years of experience managing enterprise infrastructure across on-premises, data-center, virtualization and AWS cloud environments.
- 
-My core expertise includes Linux administration, infrastructure automation, cloud operations, production support and DevOps tooling.
- 
-Core expertise:
- • Linux: RHEL, Oracle Linux, Ubuntu, CentOS, Debian, AIX
- • Cloud: AWS — EC2, VPC, IAM, S3, RDS, Route 53, Auto Scaling, CloudWatch
- • Automation & IaC: Ansible, Terraform, Shell/Bash scripting
- • CI/CD: Jenkins, Git, GitHub, GitLab
- • Containers: Docker, Docker Swarm, Kubernetes
- • Virtualization: VMware ESXi, Proxmox
- • Web & Load Balancing: Nginx, Apache, HAProxy
- • Monitoring: Prometheus, Grafana, Nagios
- • Security: SELinux, firewalld, iptables, vulnerability remediation, SSL/TLS
- • Infrastructure: DNS, DHCP, NFS, Samba, LVM, RAID, backup and recovery
- 
-I have hands-on experience supporting Dev/Test/Production environments, Linux patching and upgrades, incident management, RCA, infrastructure automation, SSL certificate lifecycle management, monitoring and system performance optimization.
- 
-I am particularly interested in Senior Linux Engineer, Linux Infrastructure Engineer, Cloud Infrastructure Engineer, DevOps Engineer and Site Reliability/Platform Engineering roles.
- 
-Open to opportunities in India and international markets, including UAE/Middle East and Europe.
-</div>
+      <div class="contact-row">
+        <span>📧 arehan.tech@gmail.com</span>
+        <span>📞 7987109823 / 9572972292</span>
+        <span>📍 Bengaluru, India</span>
+      </div>
+    </div>
+  </header>
 
-<div class="card reveal">
-<h2>Skills</h2>
+  <main class="container">
+    <section class="section reveal">
+      <div class="section-heading">
+        <span class="section-kicker">01</span>
+        <div>
+          <h2>Profile</h2>
+          <p>Building reliable infrastructure and automating repetitive operations.</p>
+        </div>
+      </div>
+      <div class="card profile-card">
+        <p>
+          Senior Linux & Infrastructure Engineer with hands-on experience supporting
+          Dev/Test/Production environments, Linux patching and upgrades, incident
+          management, RCA, infrastructure automation, SSL certificate lifecycle
+          management, monitoring and system performance optimization.
+        </p>
+        <p>
+          Core platforms include RHEL, Oracle Linux, Ubuntu, CentOS, Debian and AIX,
+          with AWS services such as EC2, VPC, IAM, S3, RDS, Route 53, Auto Scaling
+          and CloudWatch.
+        </p>
+        <p>
+          Interested in Senior Linux Engineer, Linux Infrastructure Engineer,
+          Cloud Infrastructure Engineer, DevOps Engineer and Site Reliability /
+          Platform Engineering roles.
+        </p>
+      </div>
+    </section>
 
-<!-- Skill Bars -->
-<div class="skill">
-<div class="skill-name">Linux / RHEL / Ubuntu</div>
-<div class="progress"><div class="progress-bar" data-width="95%"></div></div>
-</div>
+    <section class="section reveal">
+      <div class="section-heading">
+        <span class="section-kicker">02</span>
+        <div>
+          <h2>Technical Stack</h2>
+          <p>Tools and platforms used across infrastructure and operations.</p>
+        </div>
+      </div>
 
-<div class="skill">
-<div class="skill-name">AWS / Cloud</div>
-<div class="progress"><div class="progress-bar" data-width="90%"></div></div>
-</div>
+      <div class="tech-grid">
+        <article class="tech-card"><h3>Operating Systems</h3><p>RHEL · OEL · CentOS · Ubuntu · Debian · IBM AIX · Windows</p></article>
+        <article class="tech-card"><h3>Cloud</h3><p>AWS · EC2 · VPC · IAM · S3 · RDS · Route 53 · Auto Scaling · CloudWatch</p></article>
+        <article class="tech-card"><h3>Automation & IaC</h3><p>Ansible · Bash/Shell · Terraform</p></article>
+        <article class="tech-card"><h3>CI/CD & Git</h3><p>Jenkins · Git · GitHub · GitLab</p></article>
+        <article class="tech-card"><h3>Containers & Virtualization</h3><p>Docker · Docker Swarm · Kubernetes · VMware ESXi · Proxmox</p></article>
+        <article class="tech-card"><h3>Web & Load Balancing</h3><p>Nginx · Apache · HAProxy</p></article>
+        <article class="tech-card"><h3>Monitoring</h3><p>Prometheus · Grafana · Nagios</p></article>
+        <article class="tech-card"><h3>Security & Services</h3><p>SELinux · firewalld · iptables · OpenSSL · SSL/TLS · DNS · DHCP · NFS · Samba</p></article>
+        <article class="tech-card"><h3>Databases & Backup</h3><p>Oracle · PostgreSQL · MariaDB · MongoDB · Veeam · Rsync · Mysqldump</p></article>
+        <article class="tech-card"><h3>Patch Management</h3><p>ManageEngine Endpoint Central · Ubuntu Landscape · YUM · APT · DNF</p></article>
+      </div>
+    </section>
 
-<div class="skill">
-<div class="skill-name">Docker</div>
-<div class="progress"><div class="progress-bar" data-width="75%"></div></div>
-</div>
+    <section class="section reveal" id="projects">
+      <div class="section-heading">
+        <span class="section-kicker">03</span>
+        <div>
+          <h2>GitHub Projects & Use Cases</h2>
+          <p>Practical automation, infrastructure and availability projects. Add new projects as another card in the grid.</p>
+        </div>
+      </div>
 
-<div class="skill">
-<div class="skill-name">Ansible / Automation</div>
-<div class="progress"><div class="progress-bar" data-width="75%"></div></div>
-</div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <span class="project-type">AUTOMATION</span>
+            <h3>Infrastructure Automation using Ansible</h3>
+            <p>Enterprise Linux patching automation using Ansible to standardize repeatable infrastructure operations.</p>
+            <div class="project-links">
+              <a href="https://rehanadm.github.io/Ansible-Automation/" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+              <a href="https://github.com/rehanadm/Ansible-Automation" target="_blank" rel="noopener noreferrer">⌘ GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<div class="skill">
-<div class="skill-name">Monitoring (Prometheus, Grafana, Nagios)</div>
-<div class="progress"><div class="progress-bar" data-width="80%"></div></div>
-</div>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <span class="project-type">SHELL AUTOMATION</span>
+            <h3>Shell Script Automation</h3>
+            <p>Day-to-day Linux administration automation covering health checks, application tasks, databases, log rotation and SSL monitoring.</p>
+            <div class="project-links">
+              <a href="https://rehanadm.github.io/Dive-to-shell_script_Automation/" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+              <a href="https://github.com/rehanadm/Dive-to-shell_script_Automation" target="_blank" rel="noopener noreferrer">⌘ GitHub</a>
+            </div>
+            <div class="sub-links">
+              <a href="https://github.com/rehanadm/Dive-to-shell_script_Automation/tree/main/scripts/AIX-Server" target="_blank" rel="noopener noreferrer">AIX</a>
+              <a href="https://github.com/rehanadm/Dive-to-shell_script_Automation/tree/main/scripts/Applications" target="_blank" rel="noopener noreferrer">Applications</a>
+              <a href="https://github.com/rehanadm/Dive-to-shell_script_Automation/tree/main/scripts/Database" target="_blank" rel="noopener noreferrer">Database</a>
+              <a href="https://github.com/rehanadm/Dive-to-shell_script_Automation/tree/main/scripts/Logrotate" target="_blank" rel="noopener noreferrer">Logrotate</a>
+              <a href="https://github.com/rehanadm/Dive-to-shell_script_Automation/tree/main/scripts/SSL-Management" target="_blank" rel="noopener noreferrer">SSL Monitor</a>
+            </div>
+          </div>
+        </article>
 
-<!-- Original Content (unchanged) -->
-<h3>Operating Systems & Virtualization</h3>
-<p>OEL, RHEL, CentOS, Ubuntu, Debian, IBM AIX, Windows, VMware ESXi, VirtualBox, Hyper-V</p>
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <span class="project-type">SECURITY / AUTOMATION</span>
+            <h3>SSL Certificate Lifecycle Management</h3>
+            <p>Automation use cases for SSL certificate conversion and certificate deployment using Ansible.</p>
+            <div class="project-links">
+              <a href="https://github.com/rehanadm/Ansible-Automation/tree/main/projects/linux-patching/" target="_blank" rel="noopener noreferrer">⌘ GitHub / README</a>
+              <a href="https://github.com/rehanadm/Ansible-Automation" target="_blank" rel="noopener noreferrer">Deployment</a>
+            </div>
+          </div>
+        </article>
 
-<h3>Cloud Platforms</h3>
-<p>AWS</p>
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <span class="project-type">HIGH AVAILABILITY</span>
+            <h3>High Availability PCS Cluster</h3>
+            <p>Linux high-availability administration using PCS, with additional keepalived-based availability concepts.</p>
+            <div class="project-links">
+              <a href="https://rehanadm.github.io/Linux-HA-Cluster-Administration/" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+              <a href="https://github.com/rehanadm/Linux-HA-Cluster-Administration" target="_blank" rel="noopener noreferrer">⌘ GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<h3>Containers & IaC</h3>
-<p>Docker, Terraform</p>
+        <article class="project-card">
+          <div class="project-number">05</div>
+          <div class="project-content">
+            <span class="project-type">AWS CLOUD</span>
+            <h3>AWS Cloud Infrastructure</h3>
+            <p>Cloud infrastructure use cases around EC2, VPC, IAM, S3, load balancing and Auto Scaling.</p>
+            <div class="project-links">
+              <a href="https://github.com/rehanadm" target="_blank" rel="noopener noreferrer">⌘ GitHub Profile</a>
+            </div>
+          </div>
+        </article>
 
-<h3>Automation</h3>
-<p>Ansible, Bash Shell Scripting</p>
+        <article class="project-card">
+          <div class="project-number">06</div>
+          <div class="project-content">
+            <span class="project-type">INFRASTRUCTURE AS CODE</span>
+            <h3>Terraform Infrastructure as Code</h3>
+            <p>Infrastructure-as-code projects for repeatable and version-controlled infrastructure provisioning.</p>
+            <div class="project-links">
+              <a href="https://github.com/rehanadm" target="_blank" rel="noopener noreferrer">⌘ GitHub Profile</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<h3>Services</h3>
-<p>WEB SERVERS: Apache, Nginx, HAProxy</p>
-<p>OTHER PROTOCOL and TOOLS: SSH, OPENSSL, BASH, FTP, DNS, DHCP, VPN, SSH, SSL/TLS, SAMBA, NFS</p>
+    <section class="section two-column reveal">
+      <div class="card">
+        <span class="project-type">CERTIFICATION</span>
+        <h2>AWS Certified Solutions Architect – Associate</h2>
+        <p>Certified · August 2026</p>
+        <p class="muted">Credential ID: 68b389e45e41415097728caa6528d992</p>
+      </div>
+      <div class="card">
+        <span class="project-type">EDUCATION</span>
+        <h2>B.Tech</h2>
+        <p>Asansol Engineering College · 2015</p>
+      </div>
+    </section>
 
-<h3>Monitoring</h3>
-<p>Nagios, Prometheus, Grafana</p>
+    <section class="section reveal">
+      <div class="section-heading">
+        <span class="section-kicker">04</span>
+        <div>
+          <h2>Training & Recognition</h2>
+          <p>Selected training and professional recognition.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div><strong>Linux Training</strong><span>Intellipaat · Dec 2024</span></div>
+        <div><strong>DevOps Training</strong><span>Intellipaat · Oct 2023</span></div>
+        <div><strong>Introduction to Linux LFS101</strong><span>The Linux Foundation · Mar 2026</span></div>
+        <div><strong>Certificate of Appreciation for Innovation</strong><span>Sirma · 2022</span></div>
+        <div><strong>Employee of the Month</strong><span>Infogain · 2025</span></div>
+      </div>
+    </section>
+  </main>
 
-<h3>Databases</h3>
-<p>MongoDB, Oracle, PostgreSQL, MariaDB</p>
+  <footer class="footer">
+    <p>© 2026 Abdul Rehan · Linux & Infrastructure Engineering</p>
+    <div>
+      <a href="https://github.com/rehanadm" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/abdul-rehan-2269511a1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="Abdul_Rehan_Resume_2026-03-18.pdf" download>Resume</a>
+    </div>
+  </footer>
 
-<h3>Backup Tools</h3>
-<p>Veeam, Rsync, Mysqldump</p>
+  <script>
+    const btn = document.getElementById("themeToggle");
 
-<h3>Firewalls</h3>
-<p>HW: PFSense, Tacitine TG-EN6200</p>
-<p>SW: Firewalld,Iptables,Ufw</p>
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-mode");
+      btn.textContent = "☀";
+    }
 
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+      const light = document.body.classList.contains("light-mode");
+      localStorage.setItem("theme", light ? "light" : "dark");
+      btn.textContent = light ? "☀" : "☾";
+    });
 
-<h3>Patch Management</h3>
-<p>MANAGEENGINE Endpoint Central, Ubuntu Landscape, YUM, APT, DNF</p>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.08 });
 
-<h3>Database & Applications</h3>
-<p>MongoDB, Oracle 11G, 12C, MariaDB, PostgreSQL, Oracle WebLogic, JBoss Wild Fly</p>
-
-<h3>Backup/Recovery Solutions & utilities</h3>
-<p>VEEAM Backup and Replication, RSYNC, MONGODUMP, EXPDP, MYSQLDUMP</p>
-
-<h3>Tools & external Services:</h3>
-<p>Networking and Monitoring: Nagios, Prometheus, Grafana • Version Control: GitLab, GitHub • Security: K7 Endpoint Security • Communication and DNS: Twilio, Send Grid, GoDaddy • Hosting: A2 Hosting • Images-hosting: DOCKERHUB • Tracking Tool: Bugzilla, Redmine, Jira, ServiceNow</p>
-
-</div>
-
-<!-- PROJECTS SECTION -->
-<div class="card reveal">
-<h3>Projects & Case Studies</h3>
-
-<h3>Infrastructure Automation using Ansible</h3>
-<p>Enterprise Linux Patching Automation with Ansible (link)
-SSL Certificate Lifecycle Management Automation  (link)
-</p>
-
-<h3>CI/CD Pipeline Optimization</h3>
-<p>Designed Jenkins pipelines integrated with Git and Ansible, reducing deployment time significantly.</p>
-
-<h3>High Availability Web Architecture</h3>
-<p>Implemented Nginx and HAProxy load balancing with SSL termination ensuring zero downtime deployments.</p>
-
-<h3>High Availability Cluster</h3>
-<p>Linux-HA-Cluster-Administration</p>
-
-<h3>AWS Cloud Infrastructure Setup</h3>
-<p>Designed scalable cloud infrastructure using EC2, VPC, IAM, S3, Load Balancing and Auto Scaling.</p>
-
-
-<h3>🔹 GITHUB PROJECTS</h3>
-<h2> Shell Script Automation</h2>
-<p>
-Automated day-to-day Linux system administration tasks including health checks, log rotation, and cleanup scripts.
-</p>
-<a href="https://rehanadm.github.io/Dive-to-shell_script_Automation/" 
-   target="_blank" 
-   rel="noopener noreferrer">  🌐 View Project
-</a>
-
-</div>
-
-<div class="card reveal">
-<h2>Certifications & Trainings</h2>
-<ul>
-<li>AWS Certified Solution Architect Associate - AWS (Credential ID 68b389e45e41415097728caa6528d992) CERTIFIED</li> 
-<li>AWS Certified Solution Architect Associate 2020 - UDEMY- Training</li>
-<li>AWS Services solutions Architect Associate 2021 - UDEMY- Training</li>
-<li>Ultimate AWS Certified SAA-C03 - UDEMY- Training</li>
-
-</ul>
-</div>
-
-<div class="card reveal">
-<h2>Education</h2>
-<p>Bachelor of Technology (B.Tech) - Asansol Engineering College (2015)</p>
-</div>
-
-<div class="card reveal">
-<h2>Awards</h2>
-<p>Certificate of Appreciation for Innovation - Sirma (2022)</p>
-<p>Certificate of Employee of the Month - Infogain (2025)</p>
-</div>
-
-<div class="card reveal">
-<h2>Interests</h2>
-<p>Writing, outdoor-sports</p>
-</div>
-
-
-</div>
-</section>
-
-<div class="footer">
-<p>© 2026 Abdul Rehan | Portfolio</p>
-<p><a href="Abdul_Rehan_Resume_2026-03-18.pdf" download>Download Resume</a></p>
-</div>
-
-<script>
-// Scroll Reveal
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting){e.target.classList.add("show")}
-});
-});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-
-// Theme Toggle
-const btn=document.getElementById("themeToggle");
-btn.onclick=()=>{
-document.body.classList.toggle("light-mode");
-localStorage.setItem("theme",document.body.classList.contains("light-mode"));
-};
-if(localStorage.getItem("theme")==="true"){
-document.body.classList.add("light-mode");
-}
-
-// Skill Bars Animation
-const bars=document.querySelectorAll(".progress-bar");
-const skillObs=new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting){
-e.target.style.width=e.target.dataset.width;
-}
-});
-});
-bars.forEach(b=>skillObs.observe(b));
-</script>
-
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
